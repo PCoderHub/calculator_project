@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <h1>Calculator</h1>
+
+    <div class="container">
+      <!-- Basic Calculator -->
+      <div class="basic">
+        <form id="basic-calculator">
+          <label for="first">First Number:</label>
+          <input
+            type="number"
+            name="first"
+            id="first"
+            placeholder="enter first number"
+            required
+          />
+          <br />
+          <br />
+          <label for="second">Second Number:</label>
+          <input
+            type="number"
+            name="second"
+            id="second"
+            placeholder="enter second number"
+            required
+          />
+          <div>
+            <p>Select Operation:</p>
+            <button type="button" id="add">+</button>
+            <button type="button" id="subtract">-</button>
+            <button type="button" id="multiply">*</button>
+            <button type="button" id="divide">/</button>
+          </div>
+          <br />
+          <button type="submit">Get Result</button>
+        </form>
+        <div class="result">Result: <span id="result"></span></div>
+      </div>
+
+      <!-- Advanced Calculator -->
+      <div class="advanced">
+        <form id="advanced-calculator">
+          <label for="digit">Enter number:</label>
+          <input
+            type="number"
+            name="digit"
+            id="digit"
+            placeholder="enter number"
+            required
+          />
+          <div>
+            <p>Select Operation:</p>
+            <button type="button" id="square">x<sup>2</sup></button>
+            <button type="button" id="cube">x<sup>3</sup></button>
+          </div>
+          <br />
+          <button type="submit">Get Result</button>
+        </form>
+        <div class="result">Result: <span id="advanced-result"></span></div>
+      </div>
+    </div>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
